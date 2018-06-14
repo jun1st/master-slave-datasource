@@ -1,0 +1,15 @@
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/Dynamic.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/DynamicDataSourceContextHolder.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/DynamicDataSourceStrategy.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/aop/DynamicDataSourceAnnotationAdvisor.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/DynamicDataSourceProperties.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/DynamicItemDataSourceProperties.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/RandomDataSourceStrategy.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/DynamicRoutingDataSource.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/RoundRobinDynamicDataSourceStrategy.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/DynamicDataSourceAutoConfiguration.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/AbstractDynamicDataSourceProvider.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/aop/DynamicDataSourceAnnotationInterceptor.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/DynamicDataSourceProvider.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/YamlDataSourceProvider.java
+/Users/fengde/Documents/workspaces/dynamic-datasource/src/main/java/com/marykay/mybiz/datasource/aop/AbstractDynamicDataSourceInterceptor.java

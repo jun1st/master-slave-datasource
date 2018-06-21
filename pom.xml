@@ -37,6 +37,12 @@
         </developer>
     </developers>
 
+    <scm>
+        <connection>scm:git:git://github.com/jun1st/master-slave-datasource.git</connection>
+        <developerConnection>scm:git:ssh://github.com:jun1st/master-slave-datasource.git</developerConnection>
+        <url>http://github.com/jun1st/master-slave-datasource/tree/master</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

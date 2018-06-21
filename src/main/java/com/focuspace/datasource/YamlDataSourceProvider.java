@@ -8,11 +8,11 @@ import java.util.Map;
 /**
  * @author fengde
  */
-public class YamlDataSourceProvider extends AbstractDynamicDataSourceProvider implements DynamicDataSourceProvider {
+public class YamlDataSourceProvider extends AbstractMasterSlaveDataSourceProvider implements MasterSlaveDataSourceProvider {
 
-    private DynamicDataSourceProperties properties;
+    private MasterSlaveDataSourceProperties properties;
 
-    public YamlDataSourceProvider(DynamicDataSourceProperties properties) {
+    public YamlDataSourceProvider(MasterSlaveDataSourceProperties properties) {
         this.properties = properties;
     }
 
@@ -23,7 +23,7 @@ public class YamlDataSourceProvider extends AbstractDynamicDataSourceProvider im
 
     @Override
     public Map<String, DataSource> loadSlaves() {
-        Map<String, DynamicItemDataSourceProperties> slaves = properties.getSlave();
+        Map<String, MasterSlaveItemDataSourceProperties> slaves = properties.getSlave();
         Map<String, DataSource> dataSourceMap = new HashMap<>(slaves.size());
         slaves.forEach((k, v) -> dataSourceMap.put(k, create(v)));
         return dataSourceMap;

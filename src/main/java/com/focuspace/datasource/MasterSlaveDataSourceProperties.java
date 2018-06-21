@@ -12,11 +12,11 @@ import java.util.Map;
  */
 @Data
 @ConfigurationProperties(prefix = "spring.datasource.dynamic")
-public class DynamicDataSourceProperties {
+public class MasterSlaveDataSourceProperties {
 
     @NestedConfigurationProperty
-    private DynamicItemDataSourceProperties master = new DynamicItemDataSourceProperties();
+    private MasterSlaveItemDataSourceProperties master = new MasterSlaveItemDataSourceProperties();
 
     @NestedConfigurationProperty
-    private Map<String, DynamicItemDataSourceProperties> slave = new HashMap<>();
+    private Map<String, MasterSlaveItemDataSourceProperties> slave = new HashMap<>();
 }

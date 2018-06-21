@@ -3,7 +3,7 @@ package com.focuspace.datasource;
 import javax.sql.DataSource;
 import java.util.Map;
 
-public interface DynamicDataSourceProvider {
+public interface MasterSlaveDataSourceProvider {
 
     DataSource loadMaster();
 

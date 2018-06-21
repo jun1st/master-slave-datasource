@@ -3,11 +3,11 @@ package com.focuspace.datasource;
 /**
  * @author fengde
  */
-public final class DynamicDataSourceContextHolder {
+public final class MasterSlaveDataSourceContextHolder {
 
     private static final ThreadLocal<String> LOOKUP_KEY_HOLDER = new ThreadLocal<>();
 
-    private DynamicDataSourceContextHolder() {
+    private MasterSlaveDataSourceContextHolder() {
     }
 
     public static String getDataSourceLookupKey() {

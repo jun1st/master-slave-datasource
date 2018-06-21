@@ -1,6 +1,6 @@
 package com.focuspace.datasource;
 
-public interface DynamicDataSourceStrategy {
+public interface MasterSlaveDataSourceStrategy {
 
     /**
      *

@@ -13,21 +13,21 @@ import java.util.Set;
  * @author fengde
  */
 @Slf4j
-public class DynamicRoutingDataSource extends AbstractRoutingDataSource {
+public class MasterSlaveRoutingDataSource extends AbstractRoutingDataSource {
 
     private String[] slaveDataSourceLookupKeys;
 
     @Setter
-    private DynamicDataSourceProvider dynamicDataSourceProvider;
+    private MasterSlaveDataSourceProvider masterSlaveDataSourceProvider;
     @Setter
-    private DynamicDataSourceStrategy dynamicDataSourceStrategy;
+    private MasterSlaveDataSourceStrategy masterSlaveDataSourceStrategy;
 
     @Override
     protected Object determineCurrentLookupKey() {
-        String dataSourceLookupKey = DynamicDataSourceContextHolder.getDataSourceLookupKey();
-        DynamicDataSourceContextHolder.clearDataSourceLookupKey();
+        String dataSourceLookupKey = MasterSlaveDataSourceContextHolder.getDataSourceLookupKey();
+        MasterSlaveDataSourceContextHolder.clearDataSourceLookupKey();
         if (dataSourceLookupKey != null && dataSourceLookupKey.equals("slave")) {
-            dataSourceLookupKey = dynamicDataSourceStrategy.determineSlaveDataSource(slaveDataSourceLookupKeys);
+            dataSourceLookupKey = masterSlaveDataSourceStrategy.determineSlaveDataSource(slaveDataSourceLookupKeys);
         } else {
             dataSourceLookupKey = "master";
         }
@@ -39,8 +39,8 @@ public class DynamicRoutingDataSource extends AbstractRoutingDataSource {
 
     @Override
     public void afterPropertiesSet() {
-        DataSource masterDataSource = dynamicDataSourceProvider.loadMaster();
-        Map<String, DataSource> slaveDataSource = dynamicDataSourceProvider.loadSlaves();
+        DataSource masterDataSource = masterSlaveDataSourceProvider.loadMaster();
+        Map<String, DataSource> slaveDataSource = masterSlaveDataSourceProvider.loadSlaves();
 
         Set<String> slaveDataSourceIds = slaveDataSource.keySet();
         this.slaveDataSourceLookupKeys = slaveDataSourceIds.toArray(new String[slaveDataSource.size()]);

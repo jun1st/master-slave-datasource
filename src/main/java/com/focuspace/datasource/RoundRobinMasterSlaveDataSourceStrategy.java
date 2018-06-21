@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Pick slave datasource one after one
  * @author fengde
  */
-public class RoundRobinDynamicDataSourceStrategy implements DynamicDataSourceStrategy {
+public class RoundRobinMasterSlaveDataSourceStrategy implements MasterSlaveDataSourceStrategy {
     private AtomicInteger count = new AtomicInteger(0);
 
     @Override

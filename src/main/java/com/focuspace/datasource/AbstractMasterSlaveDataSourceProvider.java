@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import javax.sql.DataSource;
 
 @Slf4j
-public abstract class AbstractDynamicDataSourceProvider implements DynamicDataSourceProvider {
+public abstract class AbstractMasterSlaveDataSourceProvider implements MasterSlaveDataSourceProvider {
 
-    protected DataSource create(DynamicItemDataSourceProperties properties) {
+    protected DataSource create(MasterSlaveItemDataSourceProperties properties) {
         Class<? extends DataSource> type = properties.getType();
 
         if (type == null) {

@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.marykay.mybiz</groupId>
-    <artifactId>dynamic-datasource-starter</artifactId>
-    <version>0.1.0</version>
+    <groupId>com.focuspace</groupId>
+    <artifactId>master-slave-datasource-starter</artifactId>
+    <version>0.2.0</version>
     <packaging>jar</packaging>
 
-    <name>dynamic-datasource-starter</name>
-    <description>marykay mybiz dynamic datasource starter</description>
+    <name>master-slave-datasource-starter</name>
+    <description>mysql master slave datasource support for spring boot starter</description>
     <inceptionYear>2018</inceptionYear>
 
 
@@ -31,9 +31,9 @@
 
     <developers>
         <developer>
-            <name>Derek Feng</name>
-            <email>derek.feng@mkcorp.com</email>
-            <organization>mary kay</organization>
+            <name>fengde</name>
+            <email>jun1st.feng@gmail.com</email>
+            <organization>focuspace</organization>
         </developer>
     </developers>
 
@@ -62,7 +62,7 @@
     </dependencies>
 
     <build>
-        <finalName>com-marykay-mybiz-dynamic-datasource</finalName>
+        <finalName>com-focuspace-master-slave-datasource</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

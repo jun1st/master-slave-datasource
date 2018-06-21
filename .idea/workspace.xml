@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6bf2d44-3e0c-487e-84f1-2f7a46fb491f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/AbstractDynamicDataSourceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/Dynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceContextHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicItemDataSourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveItemDataSourceProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicRoutingDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveRoutingDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/RandomDataSourceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/RandomDataSourceStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/RoundRobinDynamicDataSourceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/RoundRobinMasterSlaveDataSourceStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/YamlDataSourceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/YamlDataSourceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/AbstractDynamicDataSourceInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/AbstractMasterSlaveDataSourceInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/DynamicDataSourceAnnotationAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationAdvisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/DynamicDataSourceAnnotationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/AbstractDynamicDataSourceProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/DynamicDataSourceAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/DynamicDataSourceAutoConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/DynamicDataSourceProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/DynamicDataSourceProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/DynamicItemDataSourceProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/DynamicRoutingDataSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/YamlDataSourceProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/YamlDataSourceProvider.class" afterDir="false" />
-    </list>
+    <list default="true" id="d6bf2d44-3e0c-487e-84f1-2f7a46fb491f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,15 +19,10 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-77">
+            <state relative-caret-position="-559">
               <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dynamic-datasource.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic-datasource.iml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="MasterSlave.java" pinned="false" current-in-tab="false">
@@ -208,10 +177,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="13" />
-    <option name="y" value="23" />
+    <option name="x" value="1836" />
+    <option name="y" value="118" />
     <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="height" value="903" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -364,15 +333,15 @@
       <option name="presentableId" value="Default" />
       <updated>1528879231520</updated>
       <workItem from="1528879233336" duration="5362000" />
-      <workItem from="1529564589783" duration="1201000" />
+      <workItem from="1529564589783" duration="1817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6563000" />
+    <option name="totallyTimeSpent" value="7179000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="23" width="1440" height="827" extended-state="0" />
+    <frame x="1836" y="118" width="1440" height="903" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -390,7 +359,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290461" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.30543634" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.23319027" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
       <window_info id="Structure" order="1" sideWeight="0.50159746" side_tool="true" weight="0.25" />
@@ -624,12 +593,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic-datasource.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/master-slave-datasource.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
+        <state relative-caret-position="-559">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>

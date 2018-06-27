@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="master-slave-datasource" />
+        <module name="master-slave-datasource-starter" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="master-slave-datasource-starter" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

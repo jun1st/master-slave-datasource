@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6bf2d44-3e0c-487e-84f1-2f7a46fb491f" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="1f3bf94f-52a3-47bf-a6de-6cc33f209b56" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/master-slave-datasource-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/MasterSlaveDataSourceProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/MasterSlaveDataSourceProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/MasterSlaveRoutingDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/focuspace/datasource/MasterSlaveRoutingDataSource.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,25 +20,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="dynamic-datasource" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf>
+      <file leaf-file-name="MasterSlaveDataSourceProperties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-559">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="171">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MasterSlave.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlave.java">
+      <file leaf-file-name="MasterSlaveDataSourceProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="76">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -37,53 +43,26 @@
       <file leaf-file-name="MasterSlaveDataSourceStrategy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+            <state relative-caret-position="38">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MasterSlaveDataSourceContextHolder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceContextHolder.java">
+      <file leaf-file-name="MasterSlaveItemDataSourceProperties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveItemDataSourceProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractMasterSlaveDataSourceInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/AbstractMasterSlaveDataSourceInterceptor.java">
+      <file leaf-file-name="MasterSlaveRoutingDataSource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveRoutingDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MasterSlaveDataSourceAnnotationAdvisor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationAdvisor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MasterSlaveDataSourceAnnotationInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -91,38 +70,22 @@
       <file leaf-file-name="YamlDataSourceProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/YamlDataSourceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="152">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MasterSlaveDataSourceAutoConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceAutoConfiguration.java">
+      <file leaf-file-name="AbstractMasterSlaveDataSourceProvider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>cn.com.marykay.mybizbatches.dynamicdatasource</find>
-      <find>ap</find>
-      <find>aop</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>com.marykay.mybiz.datasource</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,38 +93,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/marykay/mybiz/datasource/aop/AbstractDynamicDataSourceInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/marykay/mybiz/datasource/aop/DynamicDataSourceAnnotationInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/marykay/mybiz/datasource/aop/DynamicDataSourceAnnotationAdvisor.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicRoutingDataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveRoutingDataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicItemDataSourceProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveItemDataSourceProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/DynamicDataSourceContextHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceContextHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceAutoConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/Dynamic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlave.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/AbstractDynamicDataSourceInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/AbstractMasterSlaveDataSourceInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/DynamicDataSourceAnnotationAdvisor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationAdvisor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/DynamicDataSourceAnnotationInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationInterceptor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -177,47 +120,42 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1836" />
-    <option name="y" value="118" />
-    <option name="width" value="1440" />
-    <option name="height" value="903" />
+    <option name="x" value="953" />
+    <option name="y" value="73" />
+    <option name="width" value="1518" />
+    <option name="height" value="1257" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="dynamic-datasource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynamic-datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dynamic-datasource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynamic-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="master-slave-datasource-starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master-slave-datasource" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.27586207" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,54 +189,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Compile" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="compile" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="compile" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -322,55 +212,52 @@
       <listeners />
     </configuration>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d6bf2d44-3e0c-487e-84f1-2f7a46fb491f" name="Default" comment="" />
-      <created>1528879231520</created>
+      <changelist id="1f3bf94f-52a3-47bf-a6de-6cc33f209b56" name="Default" comment="" />
+      <created>1530111933488</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1528879231520</updated>
-      <workItem from="1528879233336" duration="5362000" />
-      <workItem from="1529564589783" duration="1817000" />
+      <updated>1530111933488</updated>
+      <workItem from="1530111935078" duration="434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7179000" />
+    <option name="totallyTimeSpent" value="434000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1836" y="118" width="1440" height="903" extended-state="0" />
-    <editor active="true" />
+    <frame x="953" y="73" width="1518" height="1257" extended-state="0" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3290461" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4640943" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290461" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.23319027" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
-      <window_info id="Structure" order="1" sideWeight="0.50159746" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3135705" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Learn" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" sideWeight="0.50159746" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -384,307 +271,94 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="527">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="171">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="76">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="38">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveItemDataSourceProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="80" />
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/RandomDataSourceStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/RoundRobinMasterSlaveDataSourceStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/AbstractMasterSlaveDataSourceInterceptor.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/2.7.8/HikariCP-2.7.8-sources.jar!/com/zaxxer/hikari/HikariDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveRoutingDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveRoutingDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveItemDataSourceProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlaveDataSourceAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/MasterSlave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/AbstractMasterSlaveDataSourceInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationAdvisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/aop/MasterSlaveDataSourceAnnotationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/YamlDataSourceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="152">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/master-slave-datasource.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-559">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="475">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.27586207" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>dynamic-datasource</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.27586207" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19465081" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: mysql:mysql-connector-java:unknown</last-edited>
+          <last-edited>9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

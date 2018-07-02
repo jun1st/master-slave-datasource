@@ -25,11 +25,10 @@ public class MasterSlaveRoutingDataSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
         String dataSourceLookupKey = MasterSlaveDataSourceContextHolder.getDataSourceLookupKey();
-        MasterSlaveDataSourceContextHolder.clearDataSourceLookupKey();
-        if (dataSourceLookupKey != null && dataSourceLookupKey.equals("slave")) {
+        if (dataSourceLookupKey != null && dataSourceLookupKey.equals(MasterSlaveTypes.SLAVE)) {
             dataSourceLookupKey = masterSlaveDataSourceStrategy.determineSlaveDataSource(slaveDataSourceLookupKeys);
         } else {
-            dataSourceLookupKey = "master";
+            dataSourceLookupKey = MasterSlaveTypes.MASTER;
         }
 
 

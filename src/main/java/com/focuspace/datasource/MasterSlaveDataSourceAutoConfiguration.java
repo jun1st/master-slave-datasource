@@ -1,7 +1,7 @@
 package com.focuspace.datasource;
 
-import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationAdvisor;
-import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationInterceptor;
+//import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationAdvisor;
+//import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationInterceptor;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -56,12 +56,12 @@ public class MasterSlaveDataSourceAutoConfiguration {
         return masterSlaveRoutingDataSource;
     }
 
-    @Bean
-    @ConditionalOnMissingBean
-    public MasterSlaveDataSourceAnnotationAdvisor dynamicDatasourceAnnotationAdvisor() {
-        MasterSlaveDataSourceAnnotationAdvisor advisor = new MasterSlaveDataSourceAnnotationAdvisor();
-        advisor.setAdvice(new MasterSlaveDataSourceAnnotationInterceptor());
-        advisor.setOrder(Integer.MIN_VALUE);
-        return advisor;
-    }
+//    @Bean
+//    @ConditionalOnMissingBean
+//    public MasterSlaveDataSourceAnnotationAdvisor dynamicDatasourceAnnotationAdvisor() {
+//        MasterSlaveDataSourceAnnotationAdvisor advisor = new MasterSlaveDataSourceAnnotationAdvisor();
+//        advisor.setAdvice(new MasterSlaveDataSourceAnnotationInterceptor());
+//        advisor.setOrder(Integer.MIN_VALUE);
+//        return advisor;
+//    }
 }

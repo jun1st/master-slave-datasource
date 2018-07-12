@@ -70,7 +70,7 @@
     </dependencies>
 
     <build>
-        <finalName>cn-focuspace-master-slave-datasource</finalName>
+        <finalName>com-focuspace-master-slave-datasource</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -135,11 +135,6 @@
                             <pushChanges>false</pushChanges>
                             <mavenExecutorId>forked-path</mavenExecutorId>
                             <arguments>-Dgpg.passphrase=19831204</arguments>
-
-                            <checkModificationExcludes>
-                                <checkModificationExclude>pom.xml</checkModificationExclude>
-                            </checkModificationExcludes>
-
                         </configuration>
                         <dependencies>
                             <dependency>

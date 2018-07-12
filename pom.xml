@@ -4,7 +4,7 @@
 
     <groupId>cn.focuspace</groupId>
     <artifactId>master-slave-datasource-starter</artifactId>
-    <version>0.2.0-SNAPSHOT</version>
+    <version>0.2.0</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -44,7 +44,7 @@
         <connection>scm:git:git://github.com/jun1st/master-slave-datasource.git</connection>
         <developerConnection>scm:git:ssh://github.com:jun1st/master-slave-datasource.git</developerConnection>
         <url>http://github.com/jun1st/master-slave-datasource/tree/master</url>
-        <tag>master-slave-datasource-starter-0.2.0-SNAPSHOT</tag>
+        <tag>master-slave-datasource-starter-0.2.0</tag>
     </scm>
 
     <dependencies>

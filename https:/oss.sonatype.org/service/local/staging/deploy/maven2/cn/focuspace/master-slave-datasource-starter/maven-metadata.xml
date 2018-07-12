@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>cn.focuspace</groupId>
+  <artifactId>master-slave-datasource-starter</artifactId>
+  <versioning>
+    <release>0.2.0</release>
+    <versions>
+      <version>0.2.0</version>
+      <version>0.2.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20180712040511</lastUpdated>
+  </versioning>
+</metadata>

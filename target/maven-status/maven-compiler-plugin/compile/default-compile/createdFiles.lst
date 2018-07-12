@@ -1,0 +1,14 @@
+cn/focuspace/datasource/MasterSlaveDataSourceAutoConfiguration.class
+cn/focuspace/datasource/YamlDataSourceProvider.class
+cn/focuspace/datasource/RandomDataSourceStrategy.class
+cn/focuspace/datasource/MasterSlaveDataSourceProvider.class
+cn/focuspace/datasource/MasterSlaveDataSourceProperties.class
+cn/focuspace/datasource/MasterSlave.class
+cn/focuspace/datasource/MasterSlaveItemDataSourceProperties.class
+cn/focuspace/datasource/MasterSlaveDataSourceContextHolder.class
+cn/focuspace/datasource/MasterSlaveRoutingDataSource.class
+cn/focuspace/datasource/MasterSlaveTypes.class
+cn/focuspace/datasource/AbstractMasterSlaveDataSourceProvider.class
+cn/focuspace/datasource/MasterSlaveDataSourceAspect.class
+cn/focuspace/datasource/RoundRobinMasterSlaveDataSourceStrategy.class
+cn/focuspace/datasource/MasterSlaveDataSourceStrategy.class

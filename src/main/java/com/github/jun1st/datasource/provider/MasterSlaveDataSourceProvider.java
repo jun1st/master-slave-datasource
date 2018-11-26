@@ -1,4 +1,4 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource.provider;
 
 import javax.sql.DataSource;
 import java.util.Map;

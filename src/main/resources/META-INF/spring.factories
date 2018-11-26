@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.focuspace.datasource.MasterSlaveDataSourceAutoConfiguration
+  com.github.jun1st.datasource.spring.boot.autoconfigure.MasterSlaveDataSourceAutoConfiguration

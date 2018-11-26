@@ -1,7 +1,12 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource.spring.boot.autoconfigure;
 
 //import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationAdvisor;
 //import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationInterceptor;
+import com.github.jun1st.datasource.*;
+import com.github.jun1st.datasource.provider.MasterSlaveDataSourceProvider;
+import com.github.jun1st.datasource.provider.YamlDataSourceProvider;
+import com.github.jun1st.datasource.strategy.MasterSlaveDataSourceStrategy;
+import com.github.jun1st.datasource.strategy.RoundRobinMasterSlaveDataSourceStrategy;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -12,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 /**
- * MasterSlave datasource configuration, configure before default database
+ * MS datasource configuration, configure before default database
  * only enable master slave setting if master-slave is on
  * @author fengde
  */
@@ -29,19 +34,19 @@ public class MasterSlaveDataSourceAutoConfiguration {
     }
 
     /**
-     * MasterSlave Datasource Strategy
+     * MS Datasource Strategy
      *
      * @return a RoundRobin strategy by default
      */
     @Bean
     @ConditionalOnMissingBean
-    public MasterSlaveDataSourceStrategy dynamicDataSourceStrategy() {
+    public MasterSlaveDataSourceStrategy masterSlaveDataSourceStrategy() {
         return new RoundRobinMasterSlaveDataSourceStrategy();
     }
 
     @Bean
     @ConditionalOnMissingBean
-    public MasterSlaveDataSourceProvider dynamicDataSourceProvider() {
+    public MasterSlaveDataSourceProvider masterSlaveDataSourceProvider() {
         return new YamlDataSourceProvider(properties);
     }
 
@@ -55,13 +60,4 @@ public class MasterSlaveDataSourceAutoConfiguration {
         masterSlaveRoutingDataSource.setMasterSlaveDataSourceStrategy(masterSlaveDataSourceStrategy);
         return masterSlaveRoutingDataSource;
     }
-
-//    @Bean
-//    @ConditionalOnMissingBean
-//    public MasterSlaveDataSourceAnnotationAdvisor dynamicDatasourceAnnotationAdvisor() {
-//        MasterSlaveDataSourceAnnotationAdvisor advisor = new MasterSlaveDataSourceAnnotationAdvisor();
-//        advisor.setAdvice(new MasterSlaveDataSourceAnnotationInterceptor());
-//        advisor.setOrder(Integer.MIN_VALUE);
-//        return advisor;
-//    }
 }

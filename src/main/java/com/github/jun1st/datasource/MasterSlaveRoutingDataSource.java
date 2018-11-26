@@ -1,5 +1,7 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource;
 
+import com.github.jun1st.datasource.provider.MasterSlaveDataSourceProvider;
+import com.github.jun1st.datasource.strategy.MasterSlaveDataSourceStrategy;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
@@ -30,9 +32,6 @@ public class MasterSlaveRoutingDataSource extends AbstractRoutingDataSource {
         } else {
             dataSourceLookupKey = MasterSlaveTypes.MASTER;
         }
-
-
-        log.debug("determine to use datasource named : {}", dataSourceLookupKey);
         return dataSourceLookupKey;
     }
 

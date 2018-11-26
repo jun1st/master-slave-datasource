@@ -1,10 +1,10 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource;
 
 import java.lang.annotation.*;
 
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface MasterSlave {
+public @interface MS {
     String value() default  "";
 }

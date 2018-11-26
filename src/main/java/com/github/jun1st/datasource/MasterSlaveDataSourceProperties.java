@@ -1,4 +1,4 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -11,7 +11,7 @@ import java.util.Map;
  * @author fengde
  */
 @Data
-@ConfigurationProperties(prefix = "spring.datasource.dynamic")
+@ConfigurationProperties(prefix = "spring.datasource.master-slave")
 public class MasterSlaveDataSourceProperties {
 
     @NestedConfigurationProperty

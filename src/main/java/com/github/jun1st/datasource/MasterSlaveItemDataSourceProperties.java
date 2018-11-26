@@ -1,4 +1,4 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource;
 
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 
@@ -8,6 +8,4 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
  */
 public class MasterSlaveItemDataSourceProperties extends DataSourceProperties {
 
-//    @NestedConfigurationProperty
-//    private DruidDataSourceProperties druid = new DruidDataSourceProperties();
 }

@@ -1,5 +1,6 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource.provider;
 
+import com.github.jun1st.datasource.MasterSlaveItemDataSourceProperties;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.sql.DataSource;

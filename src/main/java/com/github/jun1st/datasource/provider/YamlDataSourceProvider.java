@@ -1,5 +1,10 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource.provider;
 
+
+import com.github.jun1st.datasource.MasterSlaveDataSourceProperties;
+import com.github.jun1st.datasource.MasterSlaveItemDataSourceProperties;
+import com.github.jun1st.datasource.provider.AbstractMasterSlaveDataSourceProvider;
+import com.github.jun1st.datasource.provider.MasterSlaveDataSourceProvider;
 
 import javax.sql.DataSource;
 import java.util.HashMap;

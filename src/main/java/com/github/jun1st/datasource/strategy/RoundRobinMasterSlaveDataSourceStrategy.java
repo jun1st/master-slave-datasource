@@ -1,5 +1,7 @@
-package cn.focuspace.datasource;
+package com.github.jun1st.datasource.strategy;
 
+
+import com.github.jun1st.datasource.strategy.MasterSlaveDataSourceStrategy;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

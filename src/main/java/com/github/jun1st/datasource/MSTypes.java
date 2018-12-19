@@ -4,7 +4,7 @@ package com.github.jun1st.datasource;
  * @author fengde
  * Master slave datasource types
  */
-public class MasterSlaveTypes {
+public class MSTypes {
 
     public static String MASTER = "master";
 

@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.github.jun1st.datasource.spring.boot.autoconfigure.MasterSlaveDataSourceAutoConfiguration
+  com.github.jun1st.datasource.spring.boot.autoconfigure.MSDataSourceAutoConfiguration

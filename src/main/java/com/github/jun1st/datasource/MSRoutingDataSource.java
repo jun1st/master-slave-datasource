@@ -1,6 +1,6 @@
 package com.github.jun1st.datasource;
 
-import com.github.jun1st.datasource.provider.MasterSlaveDataSourceProvider;
+import com.github.jun1st.datasource.provider.MSDataSourceProvider;
 import com.github.jun1st.datasource.strategy.MasterSlaveDataSourceStrategy;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -15,30 +15,30 @@ import java.util.Set;
  * @author fengde
  */
 @Slf4j
-public class MasterSlaveRoutingDataSource extends AbstractRoutingDataSource {
+public class MSRoutingDataSource extends AbstractRoutingDataSource {
 
     private String[] slaveDataSourceLookupKeys;
 
     @Setter
-    private MasterSlaveDataSourceProvider masterSlaveDataSourceProvider;
+    private MSDataSourceProvider msDataSourceProvider;
     @Setter
     private MasterSlaveDataSourceStrategy masterSlaveDataSourceStrategy;
 
     @Override
     protected Object determineCurrentLookupKey() {
-        String dataSourceLookupKey = MasterSlaveDataSourceContextHolder.getDataSourceLookupKey();
-        if (dataSourceLookupKey != null && dataSourceLookupKey.equals(MasterSlaveTypes.SLAVE)) {
+        String dataSourceLookupKey = MSDataSourceContextHolder.getDataSourceLookupKey();
+        if (dataSourceLookupKey != null && dataSourceLookupKey.equals(MSTypes.SLAVE)) {
             dataSourceLookupKey = masterSlaveDataSourceStrategy.determineSlaveDataSource(slaveDataSourceLookupKeys);
         } else {
-            dataSourceLookupKey = MasterSlaveTypes.MASTER;
+            dataSourceLookupKey = MSTypes.MASTER;
         }
         return dataSourceLookupKey;
     }
 
     @Override
     public void afterPropertiesSet() {
-        DataSource masterDataSource = masterSlaveDataSourceProvider.loadMaster();
-        Map<String, DataSource> slaveDataSource = masterSlaveDataSourceProvider.loadSlaves();
+        DataSource masterDataSource = msDataSourceProvider.loadMaster();
+        Map<String, DataSource> slaveDataSource = msDataSourceProvider.loadSlaves();
 
         Set<String> slaveDataSourceIds = slaveDataSource.keySet();
         this.slaveDataSourceLookupKeys = slaveDataSourceIds.toArray(new String[slaveDataSource.size()]);

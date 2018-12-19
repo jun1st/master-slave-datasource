@@ -3,10 +3,11 @@ package com.github.jun1st.datasource.spring.boot.autoconfigure;
 //import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationAdvisor;
 //import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationInterceptor;
 import com.github.jun1st.datasource.*;
-import com.github.jun1st.datasource.provider.MasterSlaveDataSourceProvider;
+import com.github.jun1st.datasource.provider.MSDataSourceProvider;
 import com.github.jun1st.datasource.provider.YamlDataSourceProvider;
 import com.github.jun1st.datasource.strategy.MasterSlaveDataSourceStrategy;
 import com.github.jun1st.datasource.strategy.RoundRobinMasterSlaveDataSourceStrategy;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -23,15 +24,12 @@ import org.springframework.context.annotation.Configuration;
  */
 @ConditionalOnProperty(name = "spring.datasource.master-slave", havingValue = "true")
 @Configuration
-@EnableConfigurationProperties(MasterSlaveDataSourceProperties.class)
+@EnableConfigurationProperties(MSDataSourceProperties.class)
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)
-public class MasterSlaveDataSourceAutoConfiguration {
+public class MSDataSourceAutoConfiguration {
 
-    private final MasterSlaveDataSourceProperties properties;
-
-    public MasterSlaveDataSourceAutoConfiguration(MasterSlaveDataSourceProperties properties) {
-        this.properties = properties;
-    }
+    @Autowired
+    private MSDataSourceProperties properties;
 
     /**
      * MS Datasource Strategy
@@ -46,17 +44,25 @@ public class MasterSlaveDataSourceAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
-    public MasterSlaveDataSourceProvider masterSlaveDataSourceProvider() {
-        return new YamlDataSourceProvider(properties);
+    public MSDataSourceCreator msDataSourceCreator() {
+        MSDataSourceCreator msDataSourceCreator = new MSDataSourceCreator();
+        msDataSourceCreator.setMsHikariConfig(properties.getHikari());
+        return msDataSourceCreator;
     }
 
     @Bean
     @ConditionalOnMissingBean
-    public MasterSlaveRoutingDataSource dynamicDataSource(
-            MasterSlaveDataSourceProvider masterSlaveDataSourceProvider,
+    public MSDataSourceProvider masterSlaveDataSourceProvider(MSDataSourceCreator dataSourceCreator) {
+        return new YamlDataSourceProvider(properties, dataSourceCreator);
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public MSRoutingDataSource dynamicDataSource(
+            MSDataSourceProvider MSDataSourceProvider,
             MasterSlaveDataSourceStrategy masterSlaveDataSourceStrategy) {
-        MasterSlaveRoutingDataSource masterSlaveRoutingDataSource = new MasterSlaveRoutingDataSource();
-        masterSlaveRoutingDataSource.setMasterSlaveDataSourceProvider(masterSlaveDataSourceProvider);
+        MSRoutingDataSource masterSlaveRoutingDataSource = new MSRoutingDataSource();
+        masterSlaveRoutingDataSource.setMsDataSourceProvider(MSDataSourceProvider);
         masterSlaveRoutingDataSource.setMasterSlaveDataSourceStrategy(masterSlaveDataSourceStrategy);
         return masterSlaveRoutingDataSource;
     }

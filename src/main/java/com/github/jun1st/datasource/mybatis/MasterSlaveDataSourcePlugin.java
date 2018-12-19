@@ -1,8 +1,8 @@
 package com.github.jun1st.datasource.mybatis;
 
 
-import com.github.jun1st.datasource.MasterSlaveDataSourceContextHolder;
-import com.github.jun1st.datasource.MasterSlaveTypes;
+import com.github.jun1st.datasource.MSDataSourceContextHolder;
+import com.github.jun1st.datasource.MSTypes;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.executor.keygen.SelectKeyGenerator;
 import org.apache.ibatis.mapping.BoundSql;
@@ -52,21 +52,21 @@ public class MasterSlaveDataSourcePlugin implements Interceptor {
             if (ms.getSqlCommandType().equals(SqlCommandType.SELECT)) {
                 //!selectKey 为自增id查询主键(SELECT LAST_INSERT_ID() )方法，使用主库
                 if (ms.getId().contains(SelectKeyGenerator.SELECT_KEY_SUFFIX)) {
-                    dynamicDataSourceGlobal = MasterSlaveTypes.MASTER;
+                    dynamicDataSourceGlobal = MSTypes.MASTER;
                 } else {
                     BoundSql boundSql = ms.getSqlSource().getBoundSql(objects[1]);
                     String sql = boundSql.getSql().toLowerCase(Locale.CHINA).replaceAll("[\\t\\n\\r]", " ");
                     if (sql.matches(REGEX)) {
-                        dynamicDataSourceGlobal = MasterSlaveTypes.MASTER;
+                        dynamicDataSourceGlobal = MSTypes.MASTER;
                     } else {
-                        dynamicDataSourceGlobal = MasterSlaveTypes.SLAVE;
+                        dynamicDataSourceGlobal = MSTypes.SLAVE;
                     }
                 }
             } else {
-                dynamicDataSourceGlobal = MasterSlaveTypes.MASTER;
+                dynamicDataSourceGlobal = MSTypes.MASTER;
             }
 
-            MasterSlaveDataSourceContextHolder.setDataSourceLookupKey(dynamicDataSourceGlobal);
+            MSDataSourceContextHolder.setDataSourceLookupKey(dynamicDataSourceGlobal);
         }
 
         return invocation.proceed();

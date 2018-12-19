@@ -1,6 +1,6 @@
 package com.github.jun1st.datasource.spring.boot.autoconfigure;
 
-import com.github.jun1st.datasource.MasterSlaveRoutingDataSource;
+import com.github.jun1st.datasource.MSRoutingDataSource;
 import com.github.jun1st.datasource.mybatis.MasterSlaveDataSourcePlugin;
 import com.github.jun1st.datasource.mybatis.MybatisProperties;
 import org.apache.ibatis.mapping.DatabaseIdProvider;
@@ -47,7 +47,7 @@ public class MyBatisMasterSlaveDataSourceAutoConfiguration {
     private DatabaseIdProvider databaseIdProvider;
 
     @Autowired
-    private MasterSlaveRoutingDataSource masterSlaveRoutingDataSource;
+    private MSRoutingDataSource masterSlaveRoutingDataSource;
 
     @Bean
     public SqlSessionFactory sqlSessionFactory() throws Exception{

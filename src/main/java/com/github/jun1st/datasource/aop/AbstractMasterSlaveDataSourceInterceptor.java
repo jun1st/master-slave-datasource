@@ -1,6 +1,6 @@
 package com.github.jun1st.datasource.aop;
 
-import com.github.jun1st.datasource.MasterSlaveDataSourceContextHolder;
+import com.github.jun1st.datasource.MSDataSourceContextHolder;
 import org.springframework.aop.AfterReturningAdvice;
 import org.springframework.aop.MethodBeforeAdvice;
 
@@ -16,7 +16,7 @@ public abstract class AbstractMasterSlaveDataSourceInterceptor implements Method
     @Override
     public void before(Method method, Object[] objects, Object o) throws Throwable {
         String datasource = determinDataSource(method, objects, o);
-        MasterSlaveDataSourceContextHolder.setDataSourceLookupKey(datasource);
+        MSDataSourceContextHolder.setDataSourceLookupKey(datasource);
     }
 
 
@@ -24,6 +24,6 @@ public abstract class AbstractMasterSlaveDataSourceInterceptor implements Method
 
     @Override
     public void afterReturning(Object o, Method method, Object[] objects, Object o1) throws Throwable {
-        MasterSlaveDataSourceContextHolder.clearDataSourceLookupKey();
+        MSDataSourceContextHolder.clearDataSourceLookupKey();
     }
 }

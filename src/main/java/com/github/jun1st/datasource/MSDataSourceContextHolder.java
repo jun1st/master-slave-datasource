@@ -3,11 +3,11 @@ package com.github.jun1st.datasource;
 /**
  * @author fengde
  */
-public final class MasterSlaveDataSourceContextHolder {
+public final class MSDataSourceContextHolder {
 
     private static final ThreadLocal<String> LOOKUP_KEY_HOLDER = new ThreadLocal<>();
 
-    private MasterSlaveDataSourceContextHolder() {
+    private MSDataSourceContextHolder() {
     }
 
     public static String getDataSourceLookupKey() {

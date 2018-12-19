@@ -1,10 +1,9 @@
 package com.github.jun1st.datasource.provider;
 
 
-import com.github.jun1st.datasource.MasterSlaveDataSourceProperties;
-import com.github.jun1st.datasource.MasterSlaveItemDataSourceProperties;
-import com.github.jun1st.datasource.provider.AbstractMasterSlaveDataSourceProvider;
-import com.github.jun1st.datasource.provider.MasterSlaveDataSourceProvider;
+import com.github.jun1st.datasource.MSDataSourceCreator;
+import com.github.jun1st.datasource.MSDataSourceProperties;
+import com.github.jun1st.datasource.DataSourceProperty;
 
 import javax.sql.DataSource;
 import java.util.HashMap;
@@ -13,24 +12,34 @@ import java.util.Map;
 /**
  * @author fengde
  */
-public class YamlDataSourceProvider extends AbstractMasterSlaveDataSourceProvider implements MasterSlaveDataSourceProvider {
+public class YamlDataSourceProvider implements MSDataSourceProvider {
 
-    private MasterSlaveDataSourceProperties properties;
+    /*
+     * 多数据源参数属性
+     */
+    private MSDataSourceProperties properties;
 
-    public YamlDataSourceProvider(MasterSlaveDataSourceProperties properties) {
+    /*
+    * 数据库创建器
+     */
+    private MSDataSourceCreator msDataSourceCreator;
+
+    public YamlDataSourceProvider(MSDataSourceProperties properties, MSDataSourceCreator dataSourceCreator) {
         this.properties = properties;
+        this.msDataSourceCreator = dataSourceCreator;
     }
 
     @Override
     public DataSource loadMaster() {
-        return create(properties.getMaster());
+        DataSourceProperty property = properties.getMaster();
+        return msDataSourceCreator.create(property);
     }
 
     @Override
     public Map<String, DataSource> loadSlaves() {
-        Map<String, MasterSlaveItemDataSourceProperties> slaves = properties.getSlave();
+        Map<String, DataSourceProperty> slaves = properties.getSlave();
         Map<String, DataSource> dataSourceMap = new HashMap<>(slaves.size());
-        slaves.forEach((k, v) -> dataSourceMap.put(k, create(v)));
+        slaves.forEach((k, v) -> dataSourceMap.put(k, msDataSourceCreator.create(v)));
         return dataSourceMap;
     }
 }

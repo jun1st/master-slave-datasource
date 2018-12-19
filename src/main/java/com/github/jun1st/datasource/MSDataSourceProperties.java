@@ -1,5 +1,6 @@
 package com.github.jun1st.datasource;
 
+import com.github.jun1st.datasource.spring.boot.autoconfigure.hikari.MSHikariConfig;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
@@ -12,11 +13,17 @@ import java.util.Map;
  */
 @Data
 @ConfigurationProperties(prefix = "spring.datasource.master-slave")
-public class MasterSlaveDataSourceProperties {
+public class MSDataSourceProperties {
+
+    private String primary = "master";
 
     @NestedConfigurationProperty
-    private MasterSlaveItemDataSourceProperties master = new MasterSlaveItemDataSourceProperties();
+    private MSHikariConfig hikari = new MSHikariConfig();
 
     @NestedConfigurationProperty
-    private Map<String, MasterSlaveItemDataSourceProperties> slave = new HashMap<>();
+    private DataSourceProperty master = new DataSourceProperty();
+
+    @NestedConfigurationProperty
+    private Map<String, DataSourceProperty> slave = new HashMap<>();
+
 }

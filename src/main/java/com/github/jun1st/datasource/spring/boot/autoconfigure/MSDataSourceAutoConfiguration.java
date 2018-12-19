@@ -22,7 +22,7 @@ import org.springframework.context.annotation.Configuration;
  * only enable master slave setting if master-slave is on
  * @author fengde
  */
-@ConditionalOnProperty(name = "spring.datasource.master-slave", havingValue = "true")
+@ConditionalOnProperty(name = "spring.master-slave", havingValue = "true")
 @Configuration
 @EnableConfigurationProperties(MSDataSourceProperties.class)
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)

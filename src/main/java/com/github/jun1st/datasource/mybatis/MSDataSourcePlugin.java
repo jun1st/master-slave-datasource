@@ -35,7 +35,7 @@ import java.util.Properties;
                         ResultHandler.class
                 }
         )})
-public class MasterSlaveDataSourcePlugin implements Interceptor {
+public class MSDataSourcePlugin implements Interceptor {
 
     // insert delete update结尾的操作作为写操作，其余，都当作读操作
     private static final String REGEX = ".*insert\\u0020.*|.*delete\\u0020.*|.*update\\u0020.*";

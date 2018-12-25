@@ -1,7 +1,8 @@
 package com.github.jun1st.datasource.spring.boot.autoconfigure;
 
 import com.github.jun1st.datasource.MSRoutingDataSource;
-import com.github.jun1st.datasource.mybatis.MasterSlaveDataSourcePlugin;
+import com.github.jun1st.datasource.mybatis.MSDataSourcePlugin;
+import com.github.jun1st.datasource.mybatis.MybatisMSTransactionManager;
 import com.github.jun1st.datasource.mybatis.MybatisProperties;
 import org.apache.ibatis.mapping.DatabaseIdProvider;
 import org.apache.ibatis.plugin.Interceptor;
@@ -10,6 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -32,7 +34,8 @@ import java.util.List;
 @Configuration
 @ConditionalOnClass({SqlSessionFactory.class, SqlSessionFactoryBean.class})
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)
-public class MyBatisMasterSlaveDataSourceAutoConfiguration {
+@AutoConfigureAfter(MSRoutingDataSource.class)
+public class MyBatisMSDataSourceAutoConfiguration {
 
     @Autowired
     private MybatisProperties properties;
@@ -47,12 +50,12 @@ public class MyBatisMasterSlaveDataSourceAutoConfiguration {
     private DatabaseIdProvider databaseIdProvider;
 
     @Autowired
-    private MSRoutingDataSource masterSlaveRoutingDataSource;
+    private MSRoutingDataSource msRoutingDataSource;
 
     @Bean
     public SqlSessionFactory sqlSessionFactory() throws Exception{
         SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
-        Interceptor rwplugin = new MasterSlaveDataSourcePlugin();
+        Interceptor rwplugin = new MSDataSourcePlugin();
         if (StringUtils.hasText(this.properties.getConfigLocation())) {
             factory.setConfigLocation(this.resourceLoader.getResource(this.properties.getConfigLocation()));
         }
@@ -79,14 +82,14 @@ public class MyBatisMasterSlaveDataSourceAutoConfiguration {
             factory.setMapperLocations(this.properties.resolveMapperLocations());
         }
 
-        factory.setDataSource(masterSlaveRoutingDataSource);
+        factory.setDataSource(msRoutingDataSource);
 
         return factory.getObject();
     }
 
     @Bean
     public DataSourceTransactionManager transactionManager() {
-        return new DataSourceTransactionManager(masterSlaveRoutingDataSource);
+        return new MybatisMSTransactionManager(msRoutingDataSource);
     }
 
     @Bean

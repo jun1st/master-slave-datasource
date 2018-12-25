@@ -54,18 +54,10 @@ public class MybatisProperties {
     @NestedConfigurationProperty
     private Configuration configuration;
 
-    /**
-     * @since 1.1.0
-     * @return
-     */
     public String getConfigLocation() {
         return this.configLocation;
     }
 
-    /**
-     * @since 1.1.0
-     * @return
-     */
     public void setConfigLocation(String configLocation) {
         this.configLocation = configLocation;
     }

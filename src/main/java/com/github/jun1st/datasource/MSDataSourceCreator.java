@@ -72,7 +72,7 @@ public class MSDataSourceCreator {
         try {
             Object o1 = createMethod.invoke(null);
             Object o2 = typeMethod.invoke(o1, dataSourceProperty.getType());
-            Object o3 = urlMethod.invoke(o1, dataSourceProperty.getUrl());
+            Object o3 = urlMethod.invoke(o2, dataSourceProperty.getUrl());
             Object o4 = usernameMethod.invoke(o3, dataSourceProperty.getUsername());
             Object o5 = passwordMethod.invoke(o4, dataSourceProperty.getPassword());
             Object o6 = driverClassNameMethod.invoke(o5, dataSourceProperty.getDriverClassName());

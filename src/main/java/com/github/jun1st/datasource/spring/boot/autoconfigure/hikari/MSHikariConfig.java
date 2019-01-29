@@ -160,10 +160,12 @@ public class MSHikariConfig {
             config.setAllowPoolSuspension(tempAllowPoolSuspension);
         }
 
-        Properties tempDataSourceProperties = dataSourceProperties == null ? globalConfig.getDataSourceProperties() : dataSourceProperties;
-        if (tempDataSourceProperties != null) {
-            config.setDataSourceProperties(tempDataSourceProperties);
-        }
+        config.addDataSourceProperty("properties", "useUnicode=true;allowMultipleQueries=true");
+
+//        Properties tempDataSourceProperties = dataSourceProperties == null ? globalConfig.getDataSourceProperties() : dataSourceProperties;
+//        if (tempDataSourceProperties != null) {
+//            config.setDataSourceProperties(tempDataSourceProperties);
+//        }
 
         Properties tempHealthCheckProperties = healthCheckProperties == null ? globalConfig.getHealthCheckProperties() : healthCheckProperties;
         if (tempHealthCheckProperties != null) {

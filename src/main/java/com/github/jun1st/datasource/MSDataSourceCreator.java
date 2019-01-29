@@ -82,7 +82,7 @@ public class MSDataSourceCreator {
         }
     }
 
-    private DataSource createHikariDataSource(DataSourceProperty dataSourceProperty) {
+    private DataSource createHikariDataSource(DataSourceProperty dataSourceProperty ) {
         MSHikariConfig msHikariConfig = dataSourceProperty.getHikari();
         HikariConfig config = msHikariConfig.toHikariConfig(msHikariConfig);
 

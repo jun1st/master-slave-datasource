@@ -32,6 +32,7 @@ public class YamlDataSourceProvider implements MSDataSourceProvider {
     @Override
     public DataSource loadMaster() {
         DataSourceProperty property = properties.getMaster();
+        property.setHikari(this.properties.getHikari());
         return msDataSourceCreator.create(property);
     }
 
@@ -39,7 +40,8 @@ public class YamlDataSourceProvider implements MSDataSourceProvider {
     public Map<String, DataSource> loadSlaves() {
         Map<String, DataSourceProperty> slaves = properties.getSlave();
         Map<String, DataSource> dataSourceMap = new HashMap<>(slaves.size());
-        slaves.forEach((k, v) -> dataSourceMap.put(k, msDataSourceCreator.create(v)));
+        slaves.forEach((k, v) ->
+                dataSourceMap.put(k, msDataSourceCreator.create(v.setHikari(this.properties.getHikari()))));
         return dataSourceMap;
     }
 }

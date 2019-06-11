@@ -9,6 +9,10 @@ import lombok.extern.slf4j.Slf4j;
 import javax.sql.DataSource;
 import java.lang.reflect.Method;
 
+/**
+ * @author fengde
+ *
+ */
 @Slf4j
 public class MSDataSourceCreator {
 

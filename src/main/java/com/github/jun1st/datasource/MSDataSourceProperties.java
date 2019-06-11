@@ -10,7 +10,22 @@ import java.util.Map;
 
 /**
  * @author fengde
+ *
+ * it will merge hikari configs into all database connection pools
+ * spring:
+ *     datasource:
+ *         master-slave:
+ *             master:
+ *                 xxxxx:
+ *                 xxxxx:
+ *             slave:
+ *                 one:
+ *                     xxxx:
+ *                     xxxx:
+ *             hikari:
+ *                 jdbc-url:
  */
+
 @Data
 @ConfigurationProperties(prefix = "spring.datasource.master-slave")
 public class MSDataSourceProperties {

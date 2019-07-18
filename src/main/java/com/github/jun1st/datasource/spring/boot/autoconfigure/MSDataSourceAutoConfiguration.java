@@ -1,7 +1,5 @@
 package com.github.jun1st.datasource.spring.boot.autoconfigure;
 
-//import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationAdvisor;
-//import com.focuspace.datasource.aop.MasterSlaveDataSourceAnnotationInterceptor;
 import com.github.jun1st.datasource.*;
 import com.github.jun1st.datasource.provider.MSDataSourceProvider;
 import com.github.jun1st.datasource.provider.YamlDataSourceProvider;

@@ -4,7 +4,7 @@
 
     <groupId>com.github.jun1st</groupId>
     <artifactId>master-slave-datasource-starter</artifactId>
-    <version>0.4.1</version>
+    <version>0.5.0</version>
     <packaging>jar</packaging>
 
 

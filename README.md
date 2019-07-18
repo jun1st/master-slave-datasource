@@ -22,7 +22,7 @@
 <dependency>
     <groupId>com.github.jun1st</groupId>
     <artifactId>master-slave-datasource-starter</artifactId>
-    <version>0.4.1</version>
+    <version>0.5.0</version>
 </dependency>
 ```
 
@@ -53,3 +53,7 @@
           password: p@ssw0rd
           driver-class-name: com.mysql.jdbc.Driver
 ```
+
+## 更新日志
+
+2019-07-17 update lombok, 支持jdk 11 

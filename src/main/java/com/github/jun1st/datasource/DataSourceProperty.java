@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
-import javax.activation.DataSource;
+import javax.sql.DataSource;
 
 /**
  * Custom data source configuration properties
